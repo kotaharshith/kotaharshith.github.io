@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+
+    </head>
+    <body>
+        <h1>Fill the below form</h1>
+        <form action="/test.php" method="get">
+            <!--single line text box-->
+            First name: <input type="text" name="f_name"/><br />
+            Last name: <input type="text" name="l_name" />
+            <br />
+            <br />
+            User ID: <input type="text" name="uid" />  <br/>
+            <!--password-->
+            Password: <input type="password" name="pw" /><br /><br />
+            <!--multiline textbox-->
+            Description: <br />
+            <textarea rows="6" cols="10" name="description" >
+                Enter the description here...
+            </textarea>
+            <br />
+            <!--checkbox-->
+            <input type="checkbox" name="phy" value="on"/> Physics
+            <input type="checkbox" name="mat" value="on"/> Maths
+            <br />
+            <!--name should be same for options or radio buttons-->
+            <input type="radio" name="subject" value="physics"/> Physics
+            <input type="radio" name="subject" value="maths"/>Maths
+            <br />
+            <select name="dropdown">
+                <option value="maths" >Maths</option>
+                <option vlaue="physics">Physics</option>
+                <option value="chemistry">Chemistry</option>
+            </select>
+            <br/>
+            <!--file upload-->
+            <input type="file" name="fileupload"/>
+            <input type="file" name="myfile" multiple />
+            <input type="file" name="fileupload" accept="audio/*.video/*image/*" />
+            <input type="submit"/>
+            <br/>
+            <input type="submit" name="submit" value="Submit" />
+            <input type="reset" name="reset" value="Reset" />
+            <input type="button" name="ok" value="OK"/>
+            <br/>
+            <input type="image" name="imagebutton" src="birdimage.jpeg" />
+         </form>
+    </body>
+</html>
